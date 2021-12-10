@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           conda-version: 4.11
+          channels: conda-forge
       - name: Install dependencies
         run: |
           conda install numpy pytest
