@@ -18,7 +18,6 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: ${{ matrix.python-version }}
-          conda-version: 4.11
           channels: conda-forge
       - name: Install dependencies
         run: |
